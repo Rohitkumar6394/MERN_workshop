@@ -1,0 +1,76 @@
+.nav{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+    border: 2px solid black;
+    /* transform: rotate(50deg);
+    transform: scaley(4);
+    transform: skewY(20deg); */
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    top: 40px;
+    left: 50px;
+}
+/* .nav2{
+    width: 100px;
+    height: 100px;
+    background-color: red; */
+     /* transform: rotate(50deg);
+    transform: scale(4);
+    transform: skewY(20deg); */
+/* } */
+/* @keyframes colorchange{
+    0%{
+        background-color: aqua;
+    }
+    20%{
+        background-color: red;
+    }
+    40%{
+        background-color:black;
+    }
+    60%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: aqua;
+    } */
+/* } */
+/* @keyframes farward{
+    from{
+        left: 0px;
+        top: 0px;
+    }
+    to{
+        left: 50px;
+        top: 50px;
+    } */
+/* } */
+/* @keyframes farward{
+    0%{
+        transform: translate(0px, 0px);
+        
+    }
+    100%{
+        transform: translate(500px, 500px);
+    }
+
+} */
+ /* @keyframes ratation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    } */
+  @keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }

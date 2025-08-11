@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New Batches Schedule</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 20px;
+      background: #f9fafb;
+      color: #1a1a1a;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+      color: #111827;
+    }
+    h1 span {
+      color: #b91c1c; /* Red tone for "Batches" */
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+      border-radius: 6px;
+      overflow: hidden;
+      background: white;
+    }
+    thead {
+      background-color: #0b7748;
+      color: #ffffff;
+    }
+    thead th {
+      text-align: left;
+      padding: 14px 20px;
+      font-weight: 700;
+      font-size: 1rem;
+      border-right: 1px solid rgba(255,255,255,0.3);
+    }
+    thead th:last-child {
+      border-right: none;
+    }
+    tbody tr {
+      border-bottom: 1px solid #e5e7eb;
+      transition: background-color 0.2s ease-in-out;
+    }
+    tbody tr:hover {
+      background-color: #e6f4ea;
+    }
+    tbody td {
+      padding: 14px 20px;
+      font-size: 0.95rem;
+      color: #111827;
+      border-right: 1px solid #e5e7eb;
+    }
+    tbody td:last-child {
+      border-right: none;
+    }
+    tbody td a {
+      color: #dc2626; /* Red */
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    tbody td a:hover,
+    tbody td a:focus {
+      color: #991b1b;
+      text-decoration: underline;
+      outline: none;
+    }
+    @media (max-width: 860px) {
+      body {
+        margin: 10px;
+      }
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+      tbody tr {
+        margin-bottom: 1.25rem;
+        border: 1px solid #0b7748;
+        border-radius: 10px;
+        padding: 10px 14px;
+      }
+      tbody td {
+        border: none;
+        padding-left: 50%;
+        position: relative;
+        text-align: left;
+        font-size: 0.9rem;
+      }
+      tbody td:before {
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        transform: translateY(-50%);
+        font-weight: 700;
+        color: #0b7748;
+        content: attr(data-label);
+      }
+      tbody td a {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>New <span>Batches</span></h1>
+  <table role="table" aria-label="New Batches Course Schedule">
+    <thead>
+      <tr>
+        <th scope="col">Course</th>
+        <th scope="col">Date</th>
+        <th scope="col">Timings</th>
+        <th scope="col">Duration</th>
+        <th scope="col">Trainer</th>
+        <th scope="col">Register for Demo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Course">Python Full Stack Development</td>
+        <td data-label="Date">31- July - 2025</td>
+        <td data-label="Timings">04:00 PM - 05:00 PM</td>
+        <td data-label="Duration">5 Months</td>
+        <td data-label="Trainer">Mr. Sudheer</td>
+        <td data-label="Register for Demo"><a href="#" tabindex="0">Register Now</a></td>
+      </tr>
+      <tr>
+        <td data-label="Course">Full Stack Development</td>
+        <td data-label="Date">31- July - 2025</td>
+        <td data-label="Timings">04:00 PM - 05:00 PM</td>
+        <td data-label="Duration">5 Months</td>
+        <td data-label="Trainer">Mr. Bhargav</td>
+        <td data-label="Register for Demo"><a href="#">Register Now</a></td>
+      </tr>
+      <tr>
+        <td data-label="Course">Java Full Stack Development</td>
+        <td data-label="Date">29 July - 2025</td>
+        <td data-label="Timings">12:00 PM - 01:00 PM</td>
+        <td data-label="Duration">5 Months</td>
+        <td data-label="Trainer">Mr. Santhosh</td>
+        <td data-label="Register for Demo"><a href="#">Register Now</a></td>
+      </tr>
+      <tr>
+        <td data-label="Course">UIUX Designing</td>
+        <td data-label="Date">31- July - 2025</td>
+        <td data-label="Timings">03:00 PM - 04:00 PM</td>
+        <td data-label="Duration">5 Months</td>
+        <td data-label="Trainer">Mr. Sakthivel</td>
+        <td data-label="Register for Demo"><a href="#">Register Now</a></td>
+      </tr>
+      <tr>
+        <td data-label="Course">UI Development</td>
+        <td data-label="Date">31- July - 2025</td>
+        <td data-label="Timings">04:00 PM - 05:00 PM</td>
+        <td data-label="Duration">3 Months</td>
+        <td data-label="Trainer">Mr. Bhargav</td>
+        <td data-label="Register for Demo"><a href="#">Register Now</a></td>
+      </tr>
+      <tr>
+        <td data-label="Course">Python with DJango</td>
+        <td data-label="Date">31- July - 2025</td>
+        <td data-label="Timings">04:00 PM - 05:00 PM</td>
+        <td data-label="Duration">3 Months</td>
+        <td data-label="Trainer">Mr. Sudheer</td>
+        <td data-label="Register for Demo"><a href="#">Register Now</a></td>
+      </tr>
+      <tr>
+        <td data-label="Course">Web Designing</td>
+        <td data-label="Date">31- July - 2025</td>
+        <td data-label="Timings">04:00 PM - 05:00 PM</td>
+        <td data-label="Duration">2 Months</td>
+        <td data-label="Trainer">Mr. Bhargav</td>
+        <td data-label="Register for Demo"><a href="#">Register Now</a></td>
+      </tr>
+      <tr>
+        <td data-label="Course">Django</td>
+        <td data-label="Date">30- July -2025</td>
+        <td data-label="Timings">10:00 AM - 11:00 AM</td>
+        <td data-label="Duration">1 Months</td>
+        <td data-label="Trainer">Mr. Sudheer</td>
+        <td data-label="Register for Demo"><a href="#">Register Now</a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+```

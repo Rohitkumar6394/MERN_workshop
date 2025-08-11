@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <div class="contact-icon">
+      <!-- <img src="https://img.icons8.com/material-outlined/24/ffffff/email.png" alt="Email Icon"/> -->
+    </div>
+    <a href="mailto:info@hyderabadittrainings.com">info@hyderabadittrainings.com</a>
+    <div class="contact-icon">
+      <!-- <img src="https://img.icons8.com/material-outlined/24/ffffff/phone.png" alt="Phone Icon"/> -->
+    </div>
+    <span>+91 81439 56849</span>
+
+    <div class="social-icons">
+      <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/facebook-new.png" alt="Facebook Icon"/></a>
+      <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/instagram-new.png" alt="Instagram Icon"/></a>
+      <a href="#"><img src="https://img.icons8.com/material-outlined/24/ffffff/twitter-squared.png" alt="Twitter Icon"/></a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav style="display: flex; justify-content: space-between; align-items: center;">
+    <img src="image/logo.jpg" alt="Logo" style="width: 200px; height: 100px;">
+    <ul style="display: flex; list-style-type: none; margin: 0; padding: 0;">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Course</a></li>
+      <li><a href="#">New Batch</a></li>
+      <li><a href="#">Placement</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Student Zone</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Image Slider -->
+  <div class="slider-container">
+    <div class="sliders">
+      <div class="slider-item"><img src="image/hyadrabad it.jpg" alt="Slider Image 1"></div>
+      <div class="slider-item"><img src="image/full stack .jpg" alt="Slider Image 2"></div>
+      <div class="slider-item"><img src="image/master ui.jpg" alt="Slider Image 3"></div>
+    </div>
+  </div>
+
+  Script to animate slider
+  <script>
+    const sliders = document.querySelector('.sliders');
+    let currentSlide = 0;
+
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % 3;
+      sliders.style.marginLeft = `-${currentSlide * 100}%`;
+    }, 3000);
+  </script>
+
+  <!-- Hero Section
+  <main>
+    <section class="hero">
+      <img src="s1.png" alt="Developer Illustration">
+    </section>
+  </main> -->
+  <div class="container">
+   
+    <h1 id="h1">Welcome to Hyderabad IT Trainings</h1>
+    <div class="container2">
+  
+    <p>Hyderabad IT Trainings is a Hyderabad based Training Institute delivering 
+      classroom and online trainings in India, USA and UK, Australia. We are Providing
+       high quality training is our core value. We offer both classroom and online training
+        on niche technologies which are in high demand. All our trainers are IT professionals
+         with rich experience.</p>
+         <h2> Register Now</h2>
+          <div class="form-container">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required> 
+                </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                        <div class="form-group">
+                            <label for="message">Course</label>
+                            <input type="message" id="message" name="message" required>
+                        </div>
+                        <div class="form-group">
+                             <input type="submit" value="Submit">
+                             </div> 
+            </form>
+            </div>
+          </div>
+  </div>
+
+
+</body>
+</html>
