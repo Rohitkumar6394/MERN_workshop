@@ -23,4 +23,30 @@
 // const copy1 = [...arr1];
 // console.log(copy1); 
 
-                      
+// const fun = (a, b, c, d) => {
+    // console.log(a)
+    // console.log(b)
+    // console.log(c)/
+    // console.log(d)
+// }
+// const arr = [1, 2, 3, 4];
+// fun(...arr); // Spread operator to pass array elements as argument
+
+// const fun = ({...one})=>{
+    // console.log(one);
+// }
+// fun(one="one",two="two")
+
+// const arr = [1, 2, 3, 4, 5];
+// const obj = {one: "hello", two: "hii", three: "bye"};
+// const {one,...h}=obj
+// console.log(one); // Output: hello
+// console.log(h); // Output: { two: 'hii', three: 'bye'
+
+//  const fun = (string, value)=>{
+//     console.log(string);
+//     console.log(value); 
+//  }
+//  let hi= " hii hello";
+//  let hello = 343
+//  console.log(`${fun(`something`j`)}`) wrong
