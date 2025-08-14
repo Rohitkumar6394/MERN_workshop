@@ -5,7 +5,7 @@ function Navbar() {
         <div>
             <li>Search</li>
             <li>contect</li>
-            </div>
+         </div>
     )
 }
 export default Navbar
