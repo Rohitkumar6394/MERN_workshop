@@ -1,22 +1,43 @@
 // import logo from './logo.svg';
-// import './App.css';
-import React from 'react';
-import Navbar  from './Navabar.jsx';
+import './App.css';
+import Header from "./MyComponents/Header";
+import {Todos} from "./MyComponents/Todos";
+import {Footer} from "./MyComponents/Footer";
+import {Todo} from "./MyComponents/Todo";
+// import React from 'react';
+// import Navbar  from './Navabar.jsx';
 
-function App() {
-  const style = {
-    "backgroundColor": "yellow",
+function App() { 
+  const onDelete=()=>{
+    console.log("I am ondelete of todo",todos);
   }
+  let todos = [
+  {
+    sno: 1,  
+    title:"Go to the market",
+    desc: "you need to go the this job done"
+  },
+  {
+    sno: 2,
+    title:"Go to the mall",
+    desc: "you need to go the this job done"
+    
+  },
+  {
+    sno: 3,
+    title:"Go to the ghat",
+    desc: "you need to go the this job done"
+  }
+]
+   
 
 
   return (
-    <div>
-      <h1 style={style.color}> Welcome to h1</h1>
-      <h6 style={{"color":"red"}}> hello h6 </h6> 
-
-      <Navbar/>
-      
-    </div>
+    <> 
+      <Header title="My Todos List" searchBar={false}/>
+      <Todos  Todos={todos}/>
+      <Footer/>
+     </>
   );
 }
 export default App;
