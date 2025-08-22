@@ -7,7 +7,7 @@ function DynamicData() {
     let [data, setData] = useState({"email":"","name":""})
     const {email,name}=data
     const emailChange = (e) => {
-        setData(...data, ["email"]m: e.target.value)
+        setData(...data, ["email"]: e.target.value)
     }
 
     // let [data, setData] = useState(".....")
